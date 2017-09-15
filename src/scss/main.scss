@@ -1,0 +1,95 @@
+
+@import"~bulma/bulma.sass";
+@import '~font-awesome/scss/_variables.scss';
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+$color-letra-secundaria : #676a6c;
+
+@mixin box-shadow($left, $top, $radius, $color) {
+	box-shadow: $left $top $radius $color;
+	-webkit-box-shadow: $left $top $radius $color;
+	-moz-box-shadow: $left $top $radius $color;
+}
+
+@mixin circle($width, $color) {
+	width: $width;
+	height: $width;
+	background: $color;
+	-webkit-border-radius: $width/2;
+		-moz-border-radius: $width/2;
+			border-radius: $width/2;
+	-webkit-background-size: $width;
+		-moz-background-size: $width;
+			background-size: $width;
+	display: block;
+
+}
+
+.circle {
+	@include circle(48px, #999);
+}
+
+html {
+	font: 100% Helvetica, sans-serif;
+	color: #333;
+	background-color: #e5e5e5
+}
+
+h1{
+	color: #95989a
+}
+h1 strong.title-beetrack{
+	color: $color-letra-secundaria;
+}
+
+.beetrack{
+	color: #fab43d
+
+}
+.boton-beetrack{
+	background-color: #fab43d;
+	border-color: transparent;
+	color: #FFF;
+}
+.boton-beetrack:hover{
+	background-color: #fdb233;
+	border-color: transparent;
+	color: #FFF;
+}
+
+.titulo-listado{
+	background-color: #FFF;
+	box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+	color: $color-letra-secundaria;
+	font-weight: bold;
+	margin: 0;
+}
+.listado{
+	background-color: #FFF;
+	box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+	color: $color-letra-secundaria;
+	margin: -0.75rem 0 0 0;
+}
+.listado .column{
+	border: 1px solid rgba(149, 152, 154, 0.5);
+}
+
+.eliminar{
+	padding: 5px;
+	position: fixed;
+
+}
+
+
+.user-name{margin-top: 5%;}
+
+/*
+
+fondo:
+boton fab43d
+letra negrita 616161  - 676a6c
+otra letra 95989a
+
+cebra fcfcfc
+*/
